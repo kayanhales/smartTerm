@@ -10,11 +10,11 @@ Input variables:
 - Subject of email
 - Text
 
-Output
+Output:
 - Email from user in speficied recipient's inbox
 - SMS from user in specified recipient's phone messages
 
-Tools used
+Tools used:
 - Javascript
 - Twilio
 - Express
