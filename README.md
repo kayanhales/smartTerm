@@ -1,14 +1,14 @@
 # smartTerm
 # Tiny project - learning node.js #1
 
-Allow a user to send an SMS and an EMAIL to a gmail address and any phone.
+Allow a user to send an SMS and an EMAIL to any gmail address and any phone.
 Using node.js
 
 Input variables:
 - Gmail address
 - Phone number
 - Subject of email
-- Text
+- Body of email/sms
 
 Output:
 - Email from user in speficied recipient's inbox
