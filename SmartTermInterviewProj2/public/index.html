@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Node.JS Email & SMS application</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>
+$(document).ready(function(){
+    var from,to,subject,text;
+    $("#send_email").click(function(){      
+        to=$("#to").val();
+        tophone=$("#tophone").val();
+        subject=$("#subject").val();
+        text=$("#content").val();
+        $("#message").text("Sending E-mail and SMS...Please wait");
+        $.get("http://localhost:3000/send",{to:to,tophone:tophone,subject:subject,text:text},function(data){
+        if(data.contains("sent"))
+        {
+            $("#message").empty().html("Email is been sent at "+to+" . Check inbox.");
+            $("#message").text("Sent E-mail and SMS...successful");
+        }
+
+});
+    });
+});
+</script>
+</head>
+<body>
+	<div id="container">
+		<h1>SmartTerm Mailer</h1>
+		<p><input id="to" type="text" placeholder="Recipient email" /></p>
+		<p><input id="tophone" type="text" placeholder="Recipient phone" /></p>
+		<p><input id="subject" type="text" placeholder="Subject" /></p>
+		<p><textarea id="content" cols="40" rows="5" placeholder="Write your message"></textarea></p>
+		<p><button id="send_email">Send Email and SMS</button></p>
+		<p><span id="message"></span></p>
+	</div>
+</body>
+</html>

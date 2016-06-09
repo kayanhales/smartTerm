@@ -1,0 +1,33 @@
+html, body, input, textarea, button{
+	width:auto;
+	font-family: 'Calibri Light','Gill Sans','Open Sans',Geneva,Helvetica,Arial,sans-serif;
+	color: #888;
+	font-size: 12pt;
+	margin: auto;
+	font-weight: lighter;
+}
+
+button{
+	background: orange;
+	color: white;
+	border: none;
+	padding: 10px;
+}
+
+input, textarea{
+	padding: 10px;
+}
+
+#container{
+	position: center;
+	width:50%;
+	margin: auto;
+	/*border: 1px solid #ccc;*/
+	padding: 30px;
+}
+
+h1{
+	position: center;
+	font-family: 'Calibri Light','Gill Sans','Open Sans',Geneva,Helvetica,Arial,sans-serif;
+	font-weight: lighter;
+}
