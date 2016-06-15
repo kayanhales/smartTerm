@@ -1,20 +1,22 @@
+# smartTerm
+# Tiny project - learning node.js #1
 
+Allow a user to send an SMS and an EMAIL to any gmail address and any phone.
+Using node.js
 
-# ${projectname}
+Input variables:
+- Gmail address
+- Phone number
+- Subject of email
+- Body of email/sms
 
+Output:
+- Email from user in speficied recipient's inbox
+- SMS from user in specified recipient's phone messages
 
-
-## Usage
-
-
-
-## Developing
-
-
-
-### Tools
-
-Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
- ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
-
-Nodeclipse is free open-source project that grows with your contributions.
+Tools used:
+- Javascript
+- Twilio
+- Express
+- Nodemailer
+- Node.js
